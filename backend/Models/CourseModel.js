@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+const { Schema } = mongoose;
 
 const CourseSchema = new mongoose.Schema({
     name:{
@@ -20,5 +21,5 @@ const CourseSchema = new mongoose.Schema({
     }]
 });
 
-const UserModel = mongoose.model("courses", CourseSchema)
+const CourseModel = mongoose.model("courses", CourseSchema)
 module.exports = CourseModel;
